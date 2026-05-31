@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>title</key>
+    <string>YTKillerPlus</string>
+    <key>items</key>
+    <array>
+
+        <!-- ── Ad Blocking ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>Ad Blocking</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Block Ads</string>
+            <key>key</key><string>adBlockEnabled</string>
+            <key>default</key><true/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Auto-Skip Skippable Ads</string>
+            <key>key</key><string>autoSkipAds</string>
+            <key>default</key><true/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+
+        <!-- ── Playback ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>Playback</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Background Play</string>
+            <key>key</key><string>backgroundPlayEnabled</string>
+            <key>default</key><true/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Picture in Picture</string>
+            <key>key</key><string>pipEnabled</string>
+            <key>default</key><true/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Speed Control Overlay</string>
+            <key>key</key><string>speedControlEnabled</string>
+            <key>default</key><true/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+
+        <!-- ── SponsorBlock ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>SponsorBlock</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Skip Sponsored Segments</string>
+            <key>key</key><string>sponsorBlockEnabled</string>
+            <key>default</key><true/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+
+        <!-- ── Downloads ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>Downloads</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Download Button</string>
+            <key>key</key><string>downloadEnabled</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+
+        <!-- ── UI Tweaks ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>UI</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Shorts Tab</string>
+            <key>key</key><string>hideShorts</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Shorts in Feed</string>
+            <key>key</key><string>hideShortsFeed</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Comments</string>
+            <key>key</key><string>hideComments</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide End Cards</string>
+            <key>key</key><string>hideEndCards</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Related Videos</string>
+            <key>key</key><string>hideRelatedVideos</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Channel Watermark</string>
+            <key>key</key><string>hideWatermark</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Info Cards</string>
+            <key>key</key><string>hideInfoCards</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Cast Button</string>
+            <key>key</key><string>hideCastButton</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Hide Notification Bell</string>
+            <key>key</key><string>hideNotifButton</string>
+            <key>default</key><false/>
+            <key>PostNotification</key><string>com.epic0001.ytkplus/settingsChanged</string>
+        </dict>
+
+    </array>
+</dict>
+</plist>

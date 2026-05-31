@@ -1,0 +1,9 @@
+Package: com.epic0001.ytkplus
+Name: YTKillerPlus
+Version: 1.0.0
+Architecture: iphoneos-arm64
+Description: YouTube tweak – ad blocking, background play, downloads, SponsorBlock, speed control & UI cleanup
+Maintainer: Epic0001
+Author: Epic0001
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader

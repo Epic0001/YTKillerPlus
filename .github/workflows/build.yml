@@ -1,0 +1,39 @@
+name: Build & Package
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Theos
+        uses: theos/theos-action@v1
+        with:
+          theos-src: 'https://github.com/theos/theos'
+          sdk-src: 'https://github.com/theos/sdks'
+
+      - name: Build .deb
+        run: make package FINALPACKAGE=1
+
+      - name: Upload .deb artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: YTKillerPlus-deb
+          path: packages/*.deb
+          if-no-files-found: error
+
+      - name: Attach .deb to release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: packages/*.deb

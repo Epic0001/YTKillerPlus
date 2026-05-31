@@ -9,6 +9,7 @@ TWEAK_NAME = YTKillerPlus
 
 YTKillerPlus_FILES = \
 	Tweak.x \
+	src/Shared.m \
 	src/AdBlock.x \
 	src/Background.x \
 	src/Downloads.x \

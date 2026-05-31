@@ -17,7 +17,7 @@ YTKillerPlus_FILES = \
 	src/UITweaks.x
 
 YTKillerPlus_CFLAGS          = -fobjc-arc -Wno-deprecated-declarations
-YTKillerPlus_FRAMEWORKS      = UIKit AVFoundation MediaPlayer AudioToolbox CoreMedia
+YTKillerPlus_FRAMEWORKS      = UIKit AVFoundation AVKit MediaPlayer AudioToolbox CoreMedia
 YTKillerPlus_PRIVATE_FRAMEWORKS = MediaRemote
 YTKillerPlus_LIBRARIES       = z
 
